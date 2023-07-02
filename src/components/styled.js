@@ -114,9 +114,39 @@ p{
 
 
 export const Container2 = styled.div`
-
 padding-left: ${props=>props.right ? "20px" : "0px"};
 
+`
+
+export const Wrapper2 = styled.div`
+display: flex;
+align-items: center;
+height: 576px;
+margin-left:200px;
+margin-right:200px;
 
 
+h1{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #030F4B;
+}
+
+p{
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #52596E;
+}
+`
+
+export const Title = styled.h1`
+color: var(--black-standard, #030F4B);
+text-align: center;
+font-size: 64px;
+font-weight: 800;
+line-height: normal;
 `

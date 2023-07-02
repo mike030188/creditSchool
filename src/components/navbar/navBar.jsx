@@ -1,7 +1,11 @@
 import React from 'react';
-import { Logo, Navbar, Menu, Button, Body, Container1, Wrapper1, Frame, Container2 } from '../styled';
+import { Logo, Navbar, Menu, Button, Body, Container1, Wrapper1, Frame, Container2, Wrapper2, Title} from '../styled';
 import logo from '../../assets/images/Logo.png';
 import smile from '../../assets/images/smile.png';
+import support from '../../assets/images/support.png';
+import payment from '../../assets/images/payment.png';
+import onlinelect from '../../assets/images/online lect.png';
+
 
 
 
@@ -43,6 +47,24 @@ const NavBar = () => {
           </Container2>          
         </Frame>
       </Wrapper1>
+      <Wrapper2>
+        <Container1 style={{flexDirection:"column"}}>
+          <img src={support} alt="support" />
+          <h1>24/7 Support</h1>
+          <p>Always online to help you</p>
+        </Container1>
+        <Container1 style={{flexDirection:"column"}}>
+          <img src={payment} alt="payment" />
+          <h1>Secure Payments</h1>
+          <p>Pay your semesters fast & secure</p>
+        </Container1>
+        <Container1 style={{flexDirection:"column"}}>
+          <img src={onlinelect} alt="online lect" />
+          <h1>Online Lectures</h1>
+          <p>Study in real time, review later</p>
+        </Container1>
+      </Wrapper2>
+      <Title>Explore the departments</Title>
     </Body>
      
     
