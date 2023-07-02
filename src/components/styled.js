@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import backimg1 from '../assets/images/Photo1.png';
 import backimg2 from '../assets/images/Photo.png';
+import backimg3 from '../assets/images/Map.png';
+import backimg4 from '../assets/images/graduation.png';
+
 
 
 
@@ -26,6 +29,11 @@ align-items: center;
 flex: ${props=>props.left || props.right ? "1" : "1" };
 justify-content: ${props=>props.right ? "right" : "left"};
 
+:hover{
+    cursor: pointer;
+    color:#030F4B;
+    font-weight:600;
+}
 `
 
 
@@ -53,10 +61,18 @@ font-size: 18px;
 font-weight: 700;
 color: #FCFCFF;
 height: 52px;
+cursor: pointer;
 width: ${props=>props.register ? "154px" : "180px"};
 background-color: ${props=>props.register ? "#FD4455" : "#335DFF"};
 margin-right: ${props=>props.register ? "320px" : "0"};
 
+:hover{
+    
+}
+`
+export const ImgWrapper =  styled.img`
+width: 300px;
+height: 300px;
 `
 
 
@@ -150,3 +166,70 @@ font-size: 64px;
 font-weight: 800;
 line-height: normal;
 `
+
+export const Mainwrap = styled.div`
+display: flex;
+flex-direction: column;
+height: 1844px;
+padding: 80px 320px;
+
+
+
+`
+export const Wrapper3 = styled.div`
+display: flex;
+margin-top: ${props=>props.top ? "0px" : "80px"};
+h1{
+    color: var(--black-standard, #030F4B);
+    font-size: 48px;    
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+p {
+    color: var(--gray-standard, #4A4E63);
+    font-size: 24px;    
+    font-weight: 500;
+    line-height: 38px;
+    margin-bottom: 64px;
+}
+
+`
+
+export const Container3 = styled.div`
+
+`
+
+export const Wrapper4 = styled.div`
+background-image: url(${backimg3});
+background-repeat: no-repeat;
+background-position: center;
+height: 980px;
+`
+
+export const Wrapper5 = styled.div`
+display: flex;
+height: 448px;
+justify-content: center;
+align-items: center;
+
+`
+
+export const Wrapper6 = styled.div`
+background-image: url(${backimg4});
+background-repeat: no-repeat;
+background-position: right bottom;
+background-size: cover;
+height: 700px;
+`
+
+export const Footer = styled.div`
+display: flex;
+background-color:transparent;
+height: 104px;
+align-items: center;
+
+`
+
+
+
