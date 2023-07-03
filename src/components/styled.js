@@ -66,14 +66,8 @@ width: ${props=>props.register ? "154px" : "180px"};
 background-color: ${props=>props.register ? "#FD4455" : "#335DFF"};
 margin-right: ${props=>props.register ? "320px" : "0"};
 
-:hover{
-    
-}
 `
-export const ImgWrapper =  styled.img`
-width: 300px;
-height: 300px;
-`
+
 
 
 export const Wrapper1 = styled.div`
@@ -115,7 +109,7 @@ h1{
     font-size: 40px;
     font-weight: 800;
     line-height: normal;
-    margin-top: -55px;
+    
 }
 
 p{
@@ -197,6 +191,7 @@ p {
 `
 
 export const Container3 = styled.div`
+
 
 `
 

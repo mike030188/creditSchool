@@ -1,9 +1,10 @@
 import React from 'react';
-import { Logo, Navbar, Menu, Button, Body, Container1, Wrapper1, Frame, Container2, Container3, Wrapper2, Wrapper3, Title, Mainwrap, Footer, Wrapper5, Wrapper4, Wrapper6, ImgWrapper} from '../styled';
+import { Logo, Navbar, Menu, Button, Body, Container1, Wrapper1, Frame, Container2, Container3, Wrapper2, Wrapper3, Title, Mainwrap, Footer, Wrapper5, Wrapper4, Wrapper6} from '../styled';
 import logo from '../../assets/images/Logo.png';
 import smile from '../../assets/images/smile.png';
 import support from '../../assets/images/support.png';
 import payment from '../../assets/images/payment.png';
+import onlinelect from '../../assets/images/online lect.png';
 import compscience from "../../assets/images/Rectangle6.svg";
 import chemEng from '../../assets/images/chemEng.png';
 import busEcon from '../../assets/images/busEcon.png';
@@ -47,7 +48,7 @@ const NavBar = () => {
           </Container2>
           <Container2 right>
             <p>Total stipends given</p>
-            <h1>$10.508.305</h1>
+            <h1 style={{marginTop: "-55px"}}>$10.508.305</h1>
           </Container2>          
         </Frame>
       </Wrapper1>
@@ -63,7 +64,7 @@ const NavBar = () => {
           <p>Pay your semesters fast & secure</p>
         </Container1>
         <Container1 style={{flexDirection:"column"}}>
-          {/* <img src={onlinelect} alt="online lect" /> */}
+          <img src={onlinelect} alt="online lect" />
           <h1>Online Lectures</h1>
           <p>Study in real time, review later</p>
         </Container1>
@@ -71,30 +72,30 @@ const NavBar = () => {
       <Title>Explore the departments</Title>
       <Mainwrap>
         <Wrapper3 top>
-          <ImgWrapper scr={compscience} alt="Computer Science"/>
-          <Container3>
+          <img src={compscience} alt="Computer Science"/>
+          <Container3 style={{marginLeft:"156px"}}>
             <h1>Computer Science</h1>
-            <p>Our computer science department has<br />
-                  multiple learning paths, from Mobile<br />
-                  and Web development, to Machine<br />
-                  Learning and Data Science.</p>
+            <p>Our computer science department has multiple<br />
+                learning paths, from Mobile and Web development,<br />
+                to Machine Learning and Data Science.<br />
+                  </p>
             <Button>Learn more</Button>
           </Container3>
         </Wrapper3>
         <Wrapper3>
           <Container3>
             <h1>Chemical Engineering</h1>
-            <p>All of the students that are enrolled in<br />
-              the Chemical Engineering program receive<br />
-              a Chemist’s Kit to practice while<br />
-              learning from home.</p>
+            <p>All of the students that are enrolled in the <br />
+              Chemical Engineering program receive a <br />
+              Chemist’s Kit to practice while learning from <br />
+              home.</p>
             <Button>Learn more</Button>
           </Container3>
-          <img scr={chemEng} alt="Chemical Engineering"/>          
+          <img src={chemEng} alt="Chemical Engineering" style={{marginLeft:"156px"}}/>          
         </Wrapper3>
         <Wrapper3>
-          <img scr={busEcon} alt="Business & Economics"/>
-          <Container3>
+          <img src={busEcon} alt="Business & Economics"/>
+          <Container3 style={{marginLeft:"156px"}}>
             <h1>Business & Economics</h1>
             <p>The future CEOs and Entrepreneurs have an<br />
                 pportunity to study the business climate and<br />
